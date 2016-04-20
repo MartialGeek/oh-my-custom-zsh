@@ -13,7 +13,7 @@ _check_docker_is_running () {
     fi
 }
 
-_wdc-docker () {
+_skores-docker () {
     compadd `_list_projects`
 }
 
@@ -31,6 +31,6 @@ stop () {
     docker-compose -f ${DOCKER_PROJECT_PATH}/$argv[1] stop
 } 
 
-compdef _wdc-docker 'run'
-compdef _wdc-docker 'stop'
+compdef _skores-docker 'run'
+compdef _skores-docker 'stop'
 
