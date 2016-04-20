@@ -6,11 +6,6 @@ _list_projects () {
 
 _check_docker_is_running () {
     docker ps &> /dev/null
-
-    if [ ! $? -eq 0 ]; then
-        echo "Start Docker"
-        docker-start
-    fi
 }
 
 _mg-docker () {
