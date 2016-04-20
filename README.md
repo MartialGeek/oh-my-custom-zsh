@@ -40,3 +40,10 @@ Now you can type "run " then press Tab and your available docker-files should be
 system. Choose the one you want to run and hit Enter.
 
 A similar command "stop " works in the same way.
+
+If you have an error message saying that the Docker daemon is not running,
+you can start it with (only for Mac):
+
+    docker-start
+
+
